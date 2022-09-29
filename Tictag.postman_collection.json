@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "21594a75-0003-4f69-80c1-d0642e3cd319",
+		"name": "Tictag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7188488"
+	},
+	"item": [
+		{
+			"name": "index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/staff/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"staff@gmail.com\",\r\n  \"password\": \"staff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/staff/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"staff",
+						"signup"
+					]
+				},
+				"description": "Staff Signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/staff/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"staff@gmail.com\",\r\n  \"password\": \"staff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/staff/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"staff",
+						"login"
+					]
+				},
+				"description": "Staff login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customer/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"customer@yahoo.com\",\r\n  \"password\": \"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"signup"
+					]
+				},
+				"description": "Customer signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customer/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"customer@yahoo.com\",\r\n  \"password\": \"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"login"
+					]
+				},
+				"description": "Customer login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Product B1\",\r\n  \"brand\": \"Brand B\",\r\n  \"description\": \"description\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				},
+				"description": "Product get all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/claim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"63352321319dd4d375dc593b\",\r\n  \"product_sn\": \"SN000001\",\r\n  \"is_approved\": false,\r\n  \"create_date\": 1664427647\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claim",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claim"
+					]
+				},
+				"description": "Claim create\n\nLogin as customer first"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/claim/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/claim/6335371cefd62a5b2a875029",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claim",
+						"6335371cefd62a5b2a875029"
+					]
+				},
+				"description": "Claim get\n\nLogin as staff or customer first"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/claim/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"is_approved\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claim/6335371cefd62a5b2a875029",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claim",
+						"6335371cefd62a5b2a875029"
+					]
+				},
+				"description": "Claim update status\n\nLogin as staff first"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/claim/id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": \"63352321319dd4d375dc593b\",\r\n  \"customer_id\": \"633099295d2735813b39bb20\",\r\n  \"product_sn\": \"SN000001\",\r\n  \"is_approved\": false,\r\n  \"create_date\": 1664427647\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claim/6335371cefd62a5b2a875029",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claim",
+						"6335371cefd62a5b2a875029"
+					]
+				},
+				"description": "Claim update\n\nLogin as staff first"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
